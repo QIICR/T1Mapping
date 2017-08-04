@@ -25,6 +25,7 @@ set(referenceDataBaseDir ${CMAKE_CURRENT_SOURCE_DIR}/../Data/RegressionTests/QIB
 set(testName QIBA001_AllFlipAngles)
 set(tempOutDataBaseName ${TEMP}/${testName})
 add_test(NAME ${testName} COMMAND ${Launcher_Command} $<TARGET_FILE:${CLP}Test>
+  --compareIntensityTolerance 0.0
   --compare ${referenceDataBaseDir}${testName}-T1VFA.nrrd ${tempOutDataBaseName}-T1VFA.nrrd
   --compare ${referenceDataBaseDir}${testName}-rsqrVolume.nrrd ${tempOutDataBaseName}-rsqrVolume.nrrd
   --compare ${referenceDataBaseDir}${testName}-fittedVolume.nrrd ${tempOutDataBaseName}-fittedVolume.nrrd
@@ -39,6 +40,7 @@ set_property(TEST ${testName} PROPERTY LABELS ${CLP})
 set(testName QIBA001_InclFlipAngles)
 set(tempOutDataBaseName ${TEMP}/${testName})
 add_test(NAME ${testName} COMMAND ${Launcher_Command} $<TARGET_FILE:${CLP}Test>
+  --compareIntensityTolerance 0.0
   --compare ${referenceDataBaseDir}${testName}-T1VFA.nrrd ${tempOutDataBaseName}-T1VFA.nrrd
   --compare ${referenceDataBaseDir}${testName}-rsqrVolume.nrrd ${tempOutDataBaseName}-rsqrVolume.nrrd
   --compare ${referenceDataBaseDir}${testName}-fittedVolume.nrrd ${tempOutDataBaseName}-fittedVolume.nrrd
@@ -54,6 +56,7 @@ set_property(TEST ${testName} PROPERTY LABELS ${CLP})
 set(testName QIBA001_ExclFlipAngles)
 set(tempOutDataBaseName ${TEMP}/${testName})
 add_test(NAME ${testName} COMMAND ${Launcher_Command} $<TARGET_FILE:${CLP}Test>
+  --compareIntensityTolerance 0.0
   --compare ${referenceDataBaseDir}${testName}-T1VFA.nrrd ${tempOutDataBaseName}-T1VFA.nrrd
   --compare ${referenceDataBaseDir}${testName}-rsqrVolume.nrrd ${tempOutDataBaseName}-rsqrVolume.nrrd
   --compare ${referenceDataBaseDir}${testName}-fittedVolume.nrrd ${tempOutDataBaseName}-fittedVolume.nrrd
@@ -69,6 +72,7 @@ set_property(TEST ${testName} PROPERTY LABELS ${CLP})
 set(testName QIBA001_MaskedInput)
 set(tempOutDataBaseName ${TEMP}/${testName})
 add_test(NAME ${testName} COMMAND ${Launcher_Command} $<TARGET_FILE:${CLP}Test>
+  --compareIntensityTolerance 0.0
   --compare ${referenceDataBaseDir}${testName}-T1VFA.nrrd ${tempOutDataBaseName}-T1VFA.nrrd
   --compare ${referenceDataBaseDir}${testName}-rsqrVolume.nrrd ${tempOutDataBaseName}-rsqrVolume.nrrd
   --compare ${referenceDataBaseDir}${testName}-fittedVolume.nrrd ${tempOutDataBaseName}-fittedVolume.nrrd
