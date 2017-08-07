@@ -19,8 +19,8 @@ set_property(TEST ${testName} PROPERTY LABELS ${CLP})
 #-----------------------------------------------------------------------------
 # Regression Tests QIBA001
 #-----------------------------------------------------------------------------
-set(inputDataBaseName ${CMAKE_CURRENT_SOURCE_DIR}/../Data/RegressionTests/QIBA001/Input/QIBA001)
-set(referenceDataBaseDir ${CMAKE_CURRENT_SOURCE_DIR}/../Data/RegressionTests/QIBA001/Reference/)
+set(inputDataBaseName ${CMAKE_SOURCE_DIR}/T1Mapping/Data/RegressionTests/QIBA001/Input/QIBA001)
+set(referenceDataBaseDir ${CMAKE_SOURCE_DIR}/T1Mapping/Data/RegressionTests/QIBA001/Reference/)
 
 set(testName QIBA001_AllFlipAngles)
 set(tempOutDataBaseName ${TEMP}/${testName})
