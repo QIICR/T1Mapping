@@ -26,6 +26,7 @@
       <label>Model</label>
       <description>Select the mathematical model used to fit the data</description>
       <element>VFA</element>
+      <default>VFA</default>
     </string-enumeration>
 
     <image type="label">
