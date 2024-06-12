@@ -4,12 +4,12 @@ project(T1Mapping)
 
 #-----------------------------------------------------------------------------
 # Extension meta-information
-set(EXTENSION_HOMEPAGE "http://slicer.org/slicerWiki/index.php/Documentation/Nightly/Modules/T1Mapping")
+set(EXTENSION_HOMEPAGE "https://slicer.org/slicerWiki/index.php/Documentation/Nightly/Modules/T1Mapping")
 set(EXTENSION_CATEGORY "Quantification")
 set(EXTENSION_CONTRIBUTORS "Xiao Da(MGH)")
 set(EXTENSION_DESCRIPTION "T1 mapping estimates effective tissue parameter maps (T1) from multi-spectral FLASH MRI scans with different flip angles.")
-set(EXTENSION_ICONURL "http://slicer.org/slicerWiki/images/3/32/T1_Mapping_Logo_Resized.png")
-set(EXTENSION_SCREENSHOTURLS "http://slicer.org/slicerWiki/images/6/68/T1_Mapping_CPP_GUI.png")
+set(EXTENSION_ICONURL "https://slicer.org/slicerWiki/images/3/32/T1_Mapping_Logo_Resized.png")
+set(EXTENSION_SCREENSHOTURLS "https://slicer.org/slicerWiki/images/6/68/T1_Mapping_CPP_GUI.png")
 
 #-----------------------------------------------------------------------------
 # Extension dependencies
